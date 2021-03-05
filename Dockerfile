@@ -9,6 +9,7 @@ RUN apt-get update && \
 RUN pip install cryptography pyyaml requests youtube_dl
 
 COPY mailtrigger.sh /bin/mailtrigger
+COPY parsemailurl.py /bin/parsemailurl
 COPY run.sh /run.sh
 
 WORKDIR /data
