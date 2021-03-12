@@ -16,6 +16,6 @@ WORKDIR /data
 
 ENV POLL_INTERVAL 300
 ENV FETCHMAIL_DEF "poll mail.example.com proto pop3 port 110 user mail@example.com password pass"
-ENV DL_OPTIONS "--recode-video mkv --embed-subs --all-subs --write-sub"
+ENV DL_OPTIONS "--recode-video mkv --embed-subs --all-subs --write-sub --yes-playlist -i"
 
 CMD /run.sh
